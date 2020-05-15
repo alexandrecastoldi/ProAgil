@@ -2,6 +2,7 @@ using ProAgil.Domain;
 using ProAgil.WebAPI.Dtos;
 using AutoMapper;
 using System.Linq;
+using ProAgil.Domain.Identity;
 
 namespace ProAgil.WebAPI.Helpers
 {
@@ -19,6 +20,8 @@ namespace ProAgil.WebAPI.Helpers
                 }).ReverseMap();
             CreateMap<Lote, LoteDto>().ReverseMap();
             CreateMap<RedeSocial, RedeSocialDto>().ReverseMap();
+            CreateMap<User, UserDto>().ReverseMap();
+            CreateMap<User, UserLoginDto>().ReverseMap();
         }
     }
 }
